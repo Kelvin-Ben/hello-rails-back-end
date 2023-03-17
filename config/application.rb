@@ -9,6 +9,8 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module HelloRailsBackEnd
+  # This is the application class for the HelloRailsBackEnd API.
+  # It provides a RESTful interface for managing greetings and messages.
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
