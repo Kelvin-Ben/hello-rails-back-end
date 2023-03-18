@@ -65,8 +65,7 @@
 - **[Use migration files]**
 - **[Build 5 greeting messages]**
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### A link to [hello-react-front-end](https://github.com/Kelvin-Ben/hello-react-front-end/tree/frontend) app
 
 <!-- GETTING STARTED -->
 
