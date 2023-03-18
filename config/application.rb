@@ -22,6 +22,12 @@ module HelloRailsBackEnd
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'http://localhost:3001' # Change this to match the URL of your React app
+        resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      end
+    end
 
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.
@@ -29,3 +35,5 @@ module HelloRailsBackEnd
     config.api_only = true
   end
 end
+
+
